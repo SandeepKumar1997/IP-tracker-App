@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="map.css">
+  <script defer src="map.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <title>IP Tracker</title>
+</head>
+
+<body>
+
+  <div class="map-container">
+    <div class="back-design">
+      <h2>IP Address Tracker</h2>
+      <form action="/" method="post">
+        <input type="text" name="ipaddress" placeholder="Search for any IP Address or domain" required>
+        <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
+            <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
+          </svg></button>
+      </form>
+      <div class="ip-details">
+        <div class="ip">
+          <span class="ip-titles">IP ADDRESS</span>
+          <h4>1234</h4>
+        </div>
+        <div class="borderline"></div>
+        <div class="ip">
+          <span class="ip-titles">LOCATION</span>
+          <h4>1234</h4>
+        </div>
+        <div class="borderline"></div>
+        <div class="ip">
+          <span class="ip-titles">TIMEZONE</span>
+          <h4>1234</h4>
+        </div>
+        <div class="borderline"></div>
+        <div class="ip">
+          <span class="ip-titles">ISP</span>
+          <h4>1234</h4>
+        </div>
+      </div>
+    </div>
+
+    <div id="map">
+
+    </div>
+  </div>
+
+</body>
+
+</html>

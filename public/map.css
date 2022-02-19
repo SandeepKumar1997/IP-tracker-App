@@ -12,25 +12,27 @@
 
 .map-container {
   color: var(--fontColor);
-  background-image: url(pattern-bg.png);
   font-family: var(--fontStyle);
-  position: relative;
+  position: absolute;
+  width: 100%;
 }
 
 .back-design {
-  height: 35vh;
+  height: 30vh;
   display: flex;
   justify-content: center;
+  background-image: url(pattern-bg.png);
   align-items: center;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   width: 100%;
   position: relative;
-  
 }
 
 .back-design h2 {
   font-size: 2rem;
+  position: relative;
+  top: -1rem;
 }
 
 .back-design input {
@@ -40,6 +42,16 @@
   border: none;
   padding: 0.8rem;
   font-family: var(--fontStyle);
+}
+
+.back-design form {
+  position: relative;
+  width: 100%;
+  display: flex;
+  top: -1.8rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0.1rem;
 }
 
 button {
@@ -60,7 +72,8 @@ button:hover {
 }
 
 #map {
-  height: 65vh;
+  height: 70vh;
+  width: 100%;
   position: relative;
   z-index: 1;
 }
@@ -70,37 +83,95 @@ button:hover {
   justify-content: flex-start;
   gap: 4rem;
   background-color: white;
-  padding: 1.2rem ;
+  padding: 1rem;
   position: absolute;
   border-radius: 1rem;
-  top: 10.5rem;
+  top: 8.5rem;
   z-index: 3;
-  color:black
+  color: black;
 }
 
-.ip{
- display: flex;
- flex-direction: column;
- /* justify-content: flex-start; */
- align-items: flex-start;
- gap: 0.5rem;
- padding: 0 0.4rem;
+.ip {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-start; */
+  align-items: flex-start;
+  gap: 0.5rem;
+  /* padding: 0 0.4rem; */
 }
 
-.ip-titles{
- font-size: 0.7rem;
- font-weight: bolder;
- color: grey;
+.ip-titles {
+  font-size: 0.7rem;
+  font-weight: bolder;
+  color: grey;
 }
 
-.ip h4{
- font-size: 1.5rem;
+.ip h4 {
+  font-size: 1.5rem;
 }
 
+.borderline {
+  background-color: grey;
+  height: 3rem;
+  width: 0.1rem;
+  transform: rotate(180deg);
+}
 
-.borderline{
- background-color: grey;
- height: 3rem;
- width: 0.1rem;
- transform: rotate(180deg);
+@media (max-width: 770px) {
+  .ip-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ip-details{
+    top: 7.5rem;
+    width: 30%;
+  }
+
+  .back-design{
+    height: 40vh;
+  }
+
+  .back-design h2 {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top:-3rem
+  }
+
+  .back-design form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1rem;
+    position: relative;
+    top: -4.5rem;
+  }
+
+  .back-design input {
+    width: 60%;
+  }
+
+  
+
+  .ip {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .borderline {
+    display: none;
+  }
+
+  #map{
+    height: 60vh;
+  }
 }

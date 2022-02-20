@@ -13,7 +13,7 @@
 .map-container {
   color: var(--fontColor);
   font-family: var(--fontStyle);
-  position: absolute;
+  
   width: 100%;
 }
 
@@ -26,13 +26,13 @@
   flex-direction: column;
   gap: 2rem;
   width: 100%;
-  position: relative;
+  
   object-fit: cover;
 }
 
 .back-design h2 {
   font-size: 2rem;
-  position: relative;
+  
   top: -1rem;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .back-design form {
-  position: relative;
+  
   width: 100%;
   display: flex;
   top: -1.8rem;
@@ -75,8 +75,6 @@ button:hover {
 #map {
   height: 70vh;
   width: 100%;
-  position: relative;
-  z-index: 1;
 }
 
 .ip-details {
@@ -85,10 +83,10 @@ button:hover {
   gap: 4rem;
   background-color: white;
   padding: 1rem;
-  position: relative;
+ 
   border-radius: 1rem;
   /* top: 10rem; */
-  z-index: 3;
+  
   color: black;
 }
 
@@ -132,8 +130,8 @@ button:hover {
   .ip-details{
     /* top: 7.5rem; */
     width: 30%;
-    position: relative;
-    top: -2rem;
+    
+   
   }
 
   .back-design{
@@ -143,7 +141,7 @@ button:hover {
   .back-design h2 {
     width: 100%;
     text-align: center;
-    position: relative;
+    
       }
 
   .back-design form {
@@ -152,7 +150,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     padding: 0.1rem;
-    position: relative;
+    
     
   }
 

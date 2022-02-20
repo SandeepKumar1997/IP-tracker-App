@@ -49,5 +49,5 @@ app.post("/", (req, res) => {
 //   res.render('mapResult', { Address1: ipStack[0], locate: ipStack[1], zone: ipStack[2], isp: ipStack[3] });
 //   console.log(ipStack[0]);
 // })
-
-app.listen(3000, console.log("Server listening"));
+const PORT=process.env.PORT || 3000;
+app.listen(PORT, console.log("Server listening"));
